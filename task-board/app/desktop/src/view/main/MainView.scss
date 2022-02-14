@@ -1,3 +1,23 @@
 // sass for TaskBoard.view.home.MainView
-.mainview {
+$task-tile-background-color: #e1e0e0;
+$task-tile-importance-must-color: #f56c62;
+$task-tile-importance-should-color: #ffaa00;
+$task-tile-importance-could-color: #00c7b0;
+
+
+.task-tile {
+  padding: 2px 16px;
+  border-radius: 5px;
+  margin: 0 0 8px 0;
+  background-color: $task-tile-background-color;
+  &.task-tile_importance_MUST {
+    background-color: $task-tile-importance-must-color;
+  }
+  &.task-tile_importance_SHOULD {
+    background-color: $task-tile-importance-should-color;
+  }
+  &.task-tile_importance_COULD {
+    background-color: $task-tile-importance-could-color;
+  }
 }
+
